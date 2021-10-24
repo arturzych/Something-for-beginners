@@ -7,4 +7,4 @@ with open('hamlet.json', 'w+') as file_2:
         a += 1
         json_text = json.dumps(item)
         if a <= 20:
-            file_2.write(json_text)
+            file_2.write(f'{json_text}\n')
