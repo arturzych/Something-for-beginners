@@ -1,10 +1,7 @@
 import json
 
-from exercise_3_dict import counts
-with open('hamlet.json', 'w') as file_2:
-    a = 0
-    for item in counts.items():
-        a += 1
-        json_text = json.dumps(item)
-        if a <= 20:
-            file_2.write(f'{a} {json_text}\n ')
+with open('part_of_hamlet.txt', 'r') as file_3:
+    file_4 = file_3.read()
+    print(file_4)
+with open('hamlet_json.json', 'w') as file_5:
+    json.dump(file_4, file_5)

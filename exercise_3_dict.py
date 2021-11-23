@@ -14,12 +14,14 @@ with open('hamlet2.txt') as file:
             else:
                 counts[word] += 1
     # print(counts)
-    # c = dict(counts)
-    # print(c)
+
+    print(counts)
 
     a = 0
-
     for item in counts.items():
         a += 1
         if a <= 20:
-            print(item, a)
+            with open('part_of_hamlet.txt', 'a') as file_2:
+                file_2.write(f'{item}\n')
+                print(item, a)
+
