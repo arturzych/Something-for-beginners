@@ -1,10 +1,11 @@
 import string
+from datetime import datetime
 
 with open('hamlet2.txt') as file:
     counts = dict()
     for line in file:
         words = line.split()
-        print(words)
+        # print(words)
         for word in words:
             punc = str.maketrans('', '', string.punctuation)
             word = word.translate(punc)
@@ -16,6 +17,8 @@ with open('hamlet2.txt') as file:
     # print(counts)
 
     print(counts)
+    print(dir(datetime.now()))
+    print(datetime.now().isoweekday())
 
     a = 0
     for item in counts.items():
