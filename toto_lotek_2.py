@@ -18,3 +18,4 @@ def lotto():
 
 
 print(lotto())
+

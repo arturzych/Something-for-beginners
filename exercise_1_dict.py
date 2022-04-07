@@ -18,3 +18,18 @@ print(f' Jestem tutaj {d}')
 #     d[item] = d.get(item, 0) + 1
 # print(d)
 
+
+def info(x, y=1, z=2):
+
+    return f'{x}, {y}, {z}'
+
+
+print(info(4, z=3, y=6))
+
+
+
+for i in range(100):
+
+    if 20 <= i <= 40 and i % 5 == 0:
+        print(i)
+
